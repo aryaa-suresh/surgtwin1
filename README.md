@@ -4,27 +4,27 @@ Surgtwin is a web-based clinical learning and patient record system designed to 
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [surgtwin] 🎯
+# surgtwin 🎯
 
 ## Basic Details
 
-### Team Name: [SheCodes]
+### Team Name: SheCodes
 
 ### Team Members
-- Member 1: [Ardra C Suresh] - [Vidya Academy of science & Technology,Thrissur]
-- Member 2: [Arya s] - [Vidya Academy of science & Technology,Thrissur]
+- Member 1: Ardra C Suresh - Vidya Academy of science & Technology,Thrissur
+- Member 2: Arya s - Vidya Academy of science & Technology,Thrissur
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[Surgtwin is a web-based clinical learning and patient record system designed to help medical students and doctors digitally document patient vitals. It simulates a hospital-style electronic medical record, enabling users to maintain patient history across visits ]
+Surgtwin is a web-based clinical learning and patient record system designed to help medical students and doctors digitally document patient vitals. It simulates a hospital-style electronic medical record, enabling users to maintain patient history across visits.
 
 ### The Problem statement
-[Medical errors during surgeries remain a serious global concern. According to reports from organizations like the World Health Organization, surgical complications and preventable mistakes contribute significantly to patient harm worldwide.]
+Medical errors during surgeries remain a serious global concern. According to reports from organizations like the World Health Organization, surgical complications and preventable mistakes contribute significantly to patient harm worldwide.
 
 ### The Solution
-[Our system works like a virtual surgical mentor. It gives structured, step-by-step procedural guidance, checks decision-making at every stage, and provides performance feedback — ensuring students are fully prepared before entering real operating theatres.]
+Our system works like a virtual surgical mentor. It gives structured, step-by-step procedural guidance, checks decision-making at every stage, and provides performance feedback — ensuring students are fully prepared before entering real operating theatres.
 
 ---
 
@@ -33,25 +33,25 @@ Surgtwin is a web-based clinical learning and patient record system designed to 
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [JavaScript, HTML, CSS]
-- Frameworks used: [Bootstrap]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [VS Code, GitHub]
+- Languages used: JavaScript, HTML, CSS
+- Frameworks used: Bootstrap
+- Libraries used: 
+- Tools used: VS Code, GitHub
 
 **For Hardware:**
-- Main components: [Laptop/Desktop System]
-- Specifications: [Minimum 4GB]
-- Tools required: [Stable internet connection]
+- Main components: Laptop/Desktop System
+- Specifications: Minimum 4GB
+- Tools required: Stable internet connection
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Patient Case Simulation ]
-- Feature 2: [Step-by-step surgical guidance]
-- Feature 3: [Error detection system]
-- Feature 4: [interactive UI]
+- Feature 1: Patient Case Simulation 
+- Feature 2: Step-by-step surgical guidance
+- Feature 3: Error detection system
+- Feature 4: interactive UI
 
 ---
 
@@ -61,21 +61,30 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+# Clone the repository
+git clone https://github.com/your-username/your-repository-name.git
+
+# Navigate into the folder
+cd your-repository-name
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+# Open index.html in browser
 ```
 
 ### For Hardware:
 
 #### Components Required
-[List all components needed with specifications]
+Laptop / Desktop System
+Minimum 4GB RAM (8GB Recommended)
+Intel i3 / Ryzen 3 Processor or above
+Windows 10/11 / macOS / Linux
+Internet Connection (for GitHub access and updates)
+Modern Web Browser (Chrome / Edge / Firefox)
 
 #### Circuit Setup
-[Explain how to set up the circuit]
+no physcical circuit setup is required
 
 ---
 
@@ -85,8 +94,8 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="1920" height="1080" alt="Screenshot 2026-02-28 095456" src="https://github.com/user-attachments/assets/cea295e9-ec07-4fca-9e20-3b914349bd9c" />
+this is splash page
 
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
