@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  padding: 40px;
+}
+
+.card,
+.dashboard {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.visual-box {
+  height: 200px;
+  border: 2px dashed #1976d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1976d2;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  background: #1cd219;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.risk {
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.green {
+  background: #c8e6c9;
+}
+.red {
+  background: #ffcdd2;
+}
+
+.safe {
+  color: green;
+}
+.danger {
+  color: red;
+}

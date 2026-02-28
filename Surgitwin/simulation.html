@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clinical Simulation Dashboard</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #eef2f5;
+      }
+
+      header {
+        background: #21a10d;
+        color: #fff;
+        padding: 15px 20px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 6px;
+        border: 1px solid #cfd8dc;
+        padding: 15px;
+      }
+
+      h3 {
+        margin-top: 0;
+        color: #263238;
+      }
+
+      .status {
+        font-weight: bold;
+        color: #2e7d32;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        border: none;
+        border-radius: 4px;
+        background: #e3f2fd;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      button:hover {
+        background: #61f54a;
+      }
+
+      .log {
+        font-size: 14px;
+        color: #37474f;
+      }
+
+      .result {
+        background: #e8f5e9;
+        border-color: #53fb5b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2>Clinical Simulation Dashboard</h2>
+    </header>
+
+    <div class="container">
+      <!-- PATIENT STATUS -->
+      <div class="card">
+        <h3>Patient Status</h3>
+        <p><strong>Condition:</strong> Stable</p>
+        <p><strong>Simulation:</strong> <span class="status">Active</span></p>
+      </div>
+
+      <!-- CLINICAL ACTIONS -->
+      <div class="card">
+        <h3>Clinical Actions</h3>
+
+        <button onclick="addAction('Vitals Reviewed')">Review Vitals</button>
+
+        <button onclick="addAction('Labs Ordered')">
+          Order Laboratory Tests
+        </button>
+
+        <button onclick="addAction('Imaging Requested')">
+          Request Imaging
+        </button>
+
+        <!-- FINAL ACTION -->
+        <button onclick="finishSimulation()">view result</button>
+      </div>
+
+      <!-- SIMULATION RESULT -->
+      <div class="card result">
+        <h3>Simulation Status</h3>
+        <div id="resultText">
+          Perform clinical actions to continue simulation.
+        </div>
+      </div>
+    </div>
+
+    <!-- ACTION LOG -->
+    <div class="card" style="margin: 0 20px 20px">
+      <h3>Action Log</h3>
+      <div id="actionLog" class="log">No actions taken yet.</div>
+    </div>
+
+    <script>
+      const actions = [];
+
+      function addAction(action) {
+        actions.push(action);
+
+        document.getElementById('actionLog').innerHTML = actions
+          .map(a => '• ' + a)
+          .join('<br>');
+
+        evaluateSimulation();
+      }
+
+      function evaluateSimulation() {
+        let message = '<strong>Status:</strong> ';
+
+        if (
+          actions.includes('Vitals Reviewed') &&
+          actions.includes('Labs Ordered')
+        ) {
+          message += 'Patient adequately evaluated.';
+        } else {
+          message += 'Further clinical assessment recommended.';
+        }
+
+        document.getElementById('resultText').innerHTML = message;
+      }
+
+      // ✅ FINAL STEP: GO DIRECTLY TO RESULT PAGE
+      function finishSimulation() {
+        actions.push('Surgery Proceeded');
+
+        // Save actions for result page
+        localStorage.setItem('simulationActions', JSON.stringify(actions));
+
+        // Navigate to result page
+        window.location.href = 'result.html';
+      }
+    </script>
+  </body>
+</html>
