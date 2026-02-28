@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SurgiTwin</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #ffffff;
+      }
+
+      .splash {
+        text-align: center;
+        animation: fadeIn 1.5s ease-in;
+      }
+
+      .splash h1 {
+        font-size: 48px;
+        color: #19d232;
+        margin-bottom: 10px;
+      }
+
+      .splash p {
+        font-size: 18px;
+        color: #555555;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="splash">
+      <h1>SurgiTwin</h1>
+      <p>AI-Driven Surgical Simulation & Training</p>
+    </div>
+
+    <script>
+      // Redirect after 2 seconds
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 2000);
+    </script>
+  </body>
+</html>
